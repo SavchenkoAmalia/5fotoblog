@@ -4,30 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Вивчення основ HTMLS для новачків" >
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"/>
     <title>Document</title>
 </head>
 <body>
     <header class="header" >
+        <div class="container" >
         <nav class="header-navigation" >
             <ul class="header-list" >        
                 <li class="header-item" >
-                    <a class="header-link" href="#">lifestyle</a>
+                    <a class="header-link" href="#">LIFESTYLE</a>
                 </li>
                 <li class="header-item" >
-                    <a class="header-link" href="#">photo</a>
+                    <a class="header-link" href="#">PHOTO</a>
                 </li>
                 <li class="header-item" >
-                    <a class="header-link" href="#">musik</a>
+                    <a class="header-link" href="#">MUSIK</a>
                 </li>
                 <li class="header-item" >
-                    <a class="header-link" href="#">travel</a>
+                    <a class="header-link" href="#">TRAVEL</a>
                 </li>
             </ul>
         </nav>
     </header>
     <main class="gallary" >
         <section class="container" >
+            <div class="container" >  
+            <div class="gallary-articles" >
             <article class="gallary-article" >
                 <img  class="gallary-img" src="./img/musikfestival.jpg" alt="фестиваль" width="420" height="280" >
                 <div class="gallary-body" >
@@ -82,13 +91,16 @@
                 </p>
                </div>
             </article>
+        </div>
         </section>
         <footer class="footer" >
-        <div class="container" >
+        <div class="gallary-button" >
         <button class="footer-button" type="button">
          Load more
         </button>
         </div>
+    </div>
+    </div>
       </footer>
 </body>
 </html>
