@@ -1,0 +1,26 @@
+@import url("https://fonts.googleapis.com/css?family=Playfair+Display:regular,500,600,700,800,900,italic,500italic,600italic,700italic,800italic,900&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Ubuntu:300,300italic,regular,italic,500,500italic,700,700&display=swap");
+
+//! Import base
+@import "./base/reset.scss";
+@import "./base/variables.scss";
+
+body {
+  font-family: $mainFontFamily;
+  font-weight: Regular;
+  font-size: 14px;
+  font-style: normal;
+  line-height: normal;
+}
+
+.container {
+  max-width: 906px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+//! Import components
+@import "./components/header.scss";
+
+//! Import pages
+@import "./pages/home.scss";
