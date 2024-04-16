@@ -1,110 +1,257 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Вивчення основ HTMLS для новачків" >
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Вивчення основ HTMLS для новачків" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"/>
-    
-    <link rel="stylesheet" href="./css/main.css">
-    
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+    />
+
+    <link rel="stylesheet" href="./css/main.css" />
+
     <title>Document</title>
-</head>
-<body>
-    <header class="header" >
-        <div class="header__container container" >
-        <nav class="header__navigation navigation-header" >
-            <ul class="navigation-header__list" >        
-                <li class="navigation-header__item" >
-                    <a class="navigation-header__link" href="#">LIFESTYLE</a>
-                </li>
-                <li class="navigation-header__item" >
-                    <a class="navigation-header__link" href="#">PHOTO</a>
-                </li>
-                <li class="navigation-header__item" >
-                    <a class="navigation-header__link" href="#">MUSIK</a>
-                </li>
-                <li class="navigation-header__item" >
-                    <a class="navigation-header__link" href="#">TRAVEL</a>
-                </li>
-            </ul>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__container container">
+        <nav class="header__navigation navigation-header">
+          <ul class="navigation-header__list">
+            <li class="navigation-header__item">
+              <a class="navigation-header__link" href="#">LIFESTYLE</a>
+            </li>
+            <li class="navigation-header__item">
+              <a class="navigation-header__link" href="#">PHOTO</a>
+            </li>
+            <li class="navigation-header__item">
+              <a class="navigation-header__link" href="#">MUSIK</a>
+            </li>
+            <li class="navigation-header__item">
+              <a class="navigation-header__link" href="#">TRAVEL</a>
+            </li>
+          </ul>
         </nav>
+      </div>
     </header>
-    <main class="gallary" >
-        <section class="gallary__section" >
-            <div class=" gallary__container container" >  
-            <div class="gallary__articles" >
-            <article class="gallary__article article-gallary " >
-                <div class="article-gallary__thumb">
-                    <div class="article-gallary__overlay">
 
-                    </div>
-                <img  class="article-gallary__img" src="./img/musikfestival.jpg" alt="фестиваль" width="420" height="280" >
-                </div>
-                <div class="article-gallary__body" >
-                <div class="article-gallary__name" >LIFESTYLE</div>
-                <h2 class="article-gallary__title" >More than just a music festival</h2>
-                <p class="article-gallary__text" >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit earum, eaque fuga laudantium voluptates, cum reprehenderit ratione eligendi natus veritatis ipsam, nobis sint magnam corrupti dolorum mollitia officiis perferendis quae! 
+    <main class="gallary">
+      <section class="gallary__section">
+        <div class="gallary__container container">
+          <div class="gallary__articles">
+            <article class="gallary__article article-gallary">
+              <div class="article-gallary__thumb">
+                <picture>
+                  <source
+                    srcset="
+                      ./img/music-festival-desktop@1x.jpg 1x,
+                      ./img/music-festival-desktop@2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <img
+                    src="./img/music-festival-desktop@1x.jpg"
+                    alt="music festival"
+                    class="gallary__image"
+                  />
+                </picture>
+                <div class="article-gallary__overlay"></div>
+              </div>
+              <div class="article-gallary__body">
+                <div class="article-gallary__name">LIFESTYLE</div>
+                <h2 class="article-gallary__title">
+                  More than just a music festival
+                </h2>
+                <p class="article-gallary__text">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Suscipit earum, eaque fuga laudantium voluptates, cum
+                  reprehenderit ratione eligendi natus veritatis ipsam, nobis
+                  sint magnam corrupti dolorum mollitia officiis perferendis
+                  quae!
                 </p>
-                </div>
+              </div>
             </article>
-            <article class="article-gallary__article" >
-                <img class="article-gallary__img" src="./img/coffee.jpg" alt="фестиваль" width="420" height="280" >
-                <div class="article-gallary__body">
-                <div class="article-gallary__name" >LIFESTYLE</div>
-                <h2 class="article-gallary__title" >Life tastes better with coffee</h2>
-                <p class="article-gallary__text" >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit earum, eaque fuga laudantium voluptates, cum reprehenderit ratione eligendi natus veritatis ipsam, nobis sint magnam corrupti dolorum mollitia officiis perferendis quae! 
+            <article class="article-gallary__article">
+                <picture>
+                    <source
+                      srcset="
+                        ./img/coffee-desktop@1x.jpg 1x,
+                        ./img/coffee-desktop@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <img
+                      src="./img/coffee-desktop@1x.jpg"
+                      alt="coffee"
+                      class="gallary__image"
+                    />
+                  </picture>
+              <div class="article-gallary__body">
+                <div class="article-gallary__name">LIFESTYLE</div>
+                <h2 class="article-gallary__title">
+                  Life tastes better with coffee
+                </h2>
+                <p class="article-gallary__text">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Suscipit earum, eaque fuga laudantium voluptates, cum
+                  reprehenderit ratione eligendi natus veritatis ipsam, nobis
+                  sint magnam corrupti dolorum mollitia officiis perferendis
+                  quae!
                 </p>
-               </div>
+              </div>
             </article>
-            <article class="article-gallary__article" >
-                <img  class="article-gallary__img" src="./img/dream.jpg" alt="фестиваль" width="420" height="280" >
-                <div class="article-gallary__body" >
-                <div class="article-gallary__name" >LIFESTYLE</div>
-                <h2 class="article-gallary__title" >American dream</h2>
-                <p class="article-gallary__text" >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit earum, eaque fuga laudantium voluptates, cum reprehenderit ratione eligendi natus veritatis ipsam, nobis sint magnam corrupti dolorum mollitia officiis perferendis quae! 
+            <article class="article-gallary__article">
+                <picture>
+                    <source
+                      srcset="
+                        ./img/dream-desktop@1x.jpg 1x,
+                        ./img/dream-desktop@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <img
+                      src="./img/dream-desktop@1x.jpg"
+                      alt="dream"
+                      class="gallary__image"
+                    />
+                  </picture>
+              <div class="article-gallary__body">
+                <div class="article-gallary__name">LIFESTYLE</div>
+                <h2 class="article-gallary__title">American dream</h2>
+                <p class="article-gallary__text">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Suscipit earum, eaque fuga laudantium voluptates, cum
+                  reprehenderit ratione eligendi natus veritatis ipsam, nobis
+                  sint magnam corrupti dolorum mollitia officiis perferendis
+                  quae!
                 </p>
-               </div>
+              </div>
             </article>
-            <article class="article-gallary__article" >
-                <img class="article-gallary__img" src="./img/alps.jpg" alt="фестиваль" width="420" height="280" >
-                <div class="article-gallary__body" >
-                <div class="article-gallary__name" >LIFESTYLE</div>
-                <h2 class="article-gallary__title" >A day exploring the Alps</h2>
-                <p class="article-gallary__text" >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit earum, eaque fuga laudantium voluptates, cum reprehenderit ratione eligendi natus veritatis ipsam, nobis sint magnam corrupti dolorum mollitia officiis perferendis quae! 
+            <article class="article-gallary__article">
+                <picture>
+                    <source
+                      srcset="
+                        ./img/alps-desktop@1x.jpg 1x,
+                        ./img/alps-desktop@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <img
+                      src="./img/alps-desktop@1x.jpg"
+                      alt="alps"
+                      class="gallary__image"
+                    />
+                  </picture>
+              <div class="article-gallary__body">
+                <div class="article-gallary__name">LIFESTYLE</div>
+                <h2 class="article-gallary__title">A day exploring the Alps</h2>
+                <p class="article-gallary__text">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Suscipit earum, eaque fuga laudantium voluptates, cum
+                  reprehenderit ratione eligendi natus veritatis ipsam, nobis
+                  sint magnam corrupti dolorum mollitia officiis perferendis
+                  quae!
                 </p>
-               </div>
+              </div>
             </article>
-            <article class="article-gallary__article" >
-                <img class="article-gallary__img" src="./img/running.jpg" alt="фестиваль" width="420" height="280" >
-                <div class="article-gallary__body" >
-                <div class="article-gallary__name" >LIFESTYLE</div>
-                <h2 class="article-gallary__title" >Top 10 song for running</h2>
-                <p class="article-gallary__text" >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit earum, eaque fuga laudantium voluptates, cum reprehenderit ratione eligendi natus veritatis ipsam, nobis sint magnam corrupti dolorum mollitia officiis perferendis quae! 
+            <article class="article-gallary__article">
+                <picture>
+                    <source
+                      srcset="
+                        ./img/running-desktop@1x.jpg 1x,
+                        ./img/running-desktop@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <img
+                      src="./img/running-desktop@1x.jpg"
+                      alt="running"
+                      class="gallary__image"
+                    />
+                  </picture>
+              <div class="article-gallary__body">
+                <div class="article-gallary__name">LIFESTYLE</div>
+                <h2 class="article-gallary__title">Top 10 song for running</h2>
+                <p class="article-gallary__text">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Suscipit earum, eaque fuga laudantium voluptates, cum
+                  reprehenderit ratione eligendi natus veritatis ipsam, nobis
+                  sint magnam corrupti dolorum mollitia officiis perferendis
+                  quae!
                 </p>
-               </div>
+              </div>
             </article>
-            <article class="article-gallary__article" >
-                <img class="article-gallary__img" src="./img/winterdays.jpg" alt="фестиваль" width="420" height="280" >
-                <div class="article-gallary__body" >
-                <div class="article-gallary__name" >LIFESTYLE</div>
-                <h2 class="article-gallary__title" >Cold winter days</h2>
-                <p class="article-gallary__text" >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit earum, eaque fuga laudantium voluptates, cum reprehenderit ratione eligendi natus veritatis ipsam, nobis sint magnam corrupti dolorum mollitia officiis perferendis quae! 
+            <article class="article-gallary__article">
+                <picture>
+                    <source
+                      srcset="
+                        ./img/winters-day-desktop@1x.jpg 1x,
+                        ./img/winters-day-desktop@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <img
+                      src="./img/winters-day-desktop@1x.jpg"
+                      alt="winters day"
+                      class="gallary__image"
+                    />
+                  </picture>
+              <div class="article-gallary__body">
+                <div class="article-gallary__name">LIFESTYLE</div>
+                <h2 class="article-gallary__title">Cold winter days</h2>
+                <p class="article-gallary__text">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Suscipit earum, eaque fuga laudantium voluptates, cum
+                  reprehenderit ratione eligendi natus veritatis ipsam, nobis
+                  sint magnam corrupti dolorum mollitia officiis perferendis
+                  quae!
                 </p>
-               </div>
+              </div>
             </article>
+          </div>
         </div>
-        </section>
-        <footer class="footer" >
-            <div class="footer__container">
-            <button class="footer__button" type="button">
-                Load more
+      </section>
+      <section class="gallary__cycle cycle-gallary">
+        <div class="cycle-gallary__container container">
+          <ul class="cycle-gallary__list">
+            <li class="cycle-gallary__item">
+              <p class="cycle-gallary__text cycle-gallary__text-black">
+                Lorem ipsum dolor sit amet.
+              </p>
+            </li>
+            <li class="cycle-gallary__item">
+              <p class="cycle-gallary__text cycle-gallary__text-red">
+                Lorem ipsum dolor sit amet.
+              </p>
+            </li>
+            <li class="cycle-gallary__item">
+              <p class="cycle-gallary__text cycle-gallary__text-lightsalmon">
+                Lorem ipsum dolor sit amet.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer__container">
+        <button class="footer__button" type="button">Load more</button>
+        <ul class="gallary__buttons gallary-buttons">
+          <li class="buttons-gallary__item">
+            <button class="buttons-gallary__button button">кнопка</button>
+          </li>
+          <li class="buttons-gallary__item">
+            <button class="buttons-gallary__button button-success">
+              кнопка
             </button>
-        </div>
-    </div>
-    </div>
-      </footer>
-</body>
+          </li>
+          <li class="buttons-gallary__item">
+            <button class="buttons-gallary__button button-error">кнопка</button>
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </body>
 </html>

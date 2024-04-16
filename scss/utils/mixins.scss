@@ -1,0 +1,22 @@
+@mixin borderd ($color){
+    border-top: 1px solid $color;
+    border-bottom: 1px solid $color;
+}
+@mixin bordered ($color){
+    border-top: 3px solid $color;
+    border-bottom: 3px solid $color;
+}
+
+@mixin flexble(){ 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin text($fontSize, $fontWeight, $color, $lineheight) {
+    font-size: $fontSize;
+    font-weight: $fontWeight;
+    font-style: normal;
+    color: $color;
+    line-height: $lineheight;
+}
